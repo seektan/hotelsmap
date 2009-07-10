@@ -3,13 +3,24 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <title> 北京昆仑饭店 </title>
+<style type="text/css" media="screen">
+<!--
+body{font: 12px arial,sans-serif;}
+h1{font: 23px "微软雅黑",arial,sans-serif;}
+#map_canvas{width:1003px;height:630px;border: 1px solid #ccc;}
+.intro p{margin:0;padding:10px 0 6px;text-indent: 2em;}
+.pbt{text-align: center;}
+.pbt a{padding:6px 12px;background: #369;border: 1px solid #888;color: #fff;font: bold 14px "微软雅黑",arial,sans-serif;display: inline-block;display: -moz-inline-stack;*zoom: 1;*display: inline;}
+.pbt a:hover{background: #f30;}
+-->
+</style>
 <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=true&amp;key=ABQIAAAACZoLVN79WT2mXp8M7Dsi-hTVq-qPOFYIBxwwy4tDC0nDxxer0BR2pf3Skz56yS4IVVavPnPpSoxK6Q" type="text/javascript"></script>
 <script type="text/javascript">
 	function initialize() {
 		if (GBrowserIsCompatible()) {
 			var map = new GMap2(document.getElementById("map_canvas"));
 			map.setCenter(new GLatLng(39.94876168, 116.4600365), 14);
-			map.openInfoWindow(map.getCenter(),'<embed type="application/x-shockwave-flash" name="全景酒店" width="776" height="470" align="top" menu="false" swliveconnect="true" quality="best" scale="showall" salign="t" wmode="transparent" base="." flashvars="source=http://data.elong.com/hotels/VirtualTour/40101002_cn.xml" src="http://www.elong.com/hotels/Images/cmpdmdaplyr.swf" vspace="0" hspace="0"></embed><div class="pbt"><a href="http://www.elong.com/hotels/details.aspx?m=Image&hotelid=40101002" target="_blank">更多酒店详情</a></div>');
+			map.openInfoWindow(map.getCenter(),'<embed type="application/x-shockwave-flash" name="全景酒店" width="776" height="470" align="top" menu="false" swliveconnect="true" quality="best" scale="showall" salign="t" wmode="transparent" base="." flashvars="source=http://data.elong.com/hotels/VirtualTour/40101002_cn.xml" src="http://www.elong.com/hotels/Images/cmpdmdaplyr.swf" vspace="0" hspace="0"></embed><div class="pbt"><a href="http://www.elong.com/hotels/details.aspx?m=Rate&hotelid=40101002" target="_blank">全部房型介绍</a></div>');
 		}
 	}
 </script>
@@ -18,8 +29,15 @@
 
 <div id="wp">
 
-	<h1>北京昆仑饭店</h1>
-	<div id="map_canvas" style="width: 1000px; height: 800px"></div>
+	<h1><a href="http://www.elong.com/hotels/details.aspx?m=Image&hotelid=40101002" target="_blank">北京昆仑饭店</a> <img src="http://resource.elong.com/cn/hotels/images/50x.gif" alt="五星级酒店"></h1>
+	<div class="intro">
+		<p>由锦江酒店管理集团管理的昆仑饭店于1986年开业，1999年全面翻新，2005年8月大堂新装修完毕,楼高29层，拥有700间客房，普标面积28平方米。</p>
+		<p>酒店座落于风景秀丽的亮马河畔，毗邻使馆区，周边有京城大厦写字楼，中国国际展览中心，燕莎购物中心，和众多写字楼环绕，高速公路近在咫尺，驱车从饭店至北京国际机场仅需要15分钟，至市中心亦只需要20分钟，至火车站20分钟，交通极为便利。</p> 
+		<p>拥有各种风味餐厅，其中上海菜最为著名，昆仑饭店的宴会厅可容纳800人的会议厅。</p>
+		<p>昆仑饭店于1995年入选中国50佳饭店之列，1996年被美国优质服务科技协会授予五星钻石奖。</p>
+		<p>酒店星级： <img src="http://resource.elong.com/cn/hotels/images/50x.gif" alt="五星">  1986年1月开业  2006年4月重新装修</p>
+	</div>
+	<div id="map_canvas"></div>
 
 </div>
 </body>
