@@ -16,13 +16,15 @@ h1 a{text-decoration: none; }
 .pbt a:hover{background: #f30;}
 -->
 </style>
-<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=true&amp;key=ABQIAAAACZoLVN79WT2mXp8M7Dsi-hTVq-qPOFYIBxwwy4tDC0nDxxer0BR2pf3Skz56yS4IVVavPnPpSoxK6Q" type="text/javascript"></script>
+<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=true&amp;key=ABQIAAAACZoLVN79WT2mXp8M7Dsi-hT8RhanqORi0jWQcYg1saDxBGM1wRSOMPpo1-VpaYMaz0wW29LaQuceIg" type="text/javascript"></script>
 <script type="text/javascript">
 	function initialize() {
 		if (GBrowserIsCompatible()) {
 			var map = new GMap2(document.getElementById("map_canvas"));
 			map.setCenter(new GLatLng(39.94876168, 116.4600365), 14);
-			map.openInfoWindow(map.getCenter(),'<embed type="application/x-shockwave-flash" name="全景酒店" width="776" height="470" align="top" menu="false" swliveconnect="true" quality="best" scale="showall" salign="t" wmode="transparent" base="." flashvars="source=http://data.elong.com/hotels/VirtualTour/40101002_cn.xml" src="http://www.elong.com/hotels/Images/cmpdmdaplyr.swf" vspace="0" hspace="0"></embed><div class="pbt"><a href="http://www.elong.com/hotels/details.aspx?m=Rate&hotelid=40101002" target="_blank">全部房型介绍</a></div>');
+			map.openInfoWindow(map.getCenter(),'<embed type="application/x-shockwave-flash" name="全景酒店" width="776" height="470" align="top" menu="false" swliveconnect="true" quality="best" scale="showall" salign="t" wmode="transparent" base="." flashvars="source=http://data.elong.com/hotels/VirtualTour/40101002_cn.xml" src="http://www.elong.com/hotels/Images/cmpdmdaplyr.swf" vspace="0" hspace="0"></embed><div class="pbt"><a href="http://www.elong.com/hotels/details.aspx?m=Rate&hotelid=40101002" target="_blank">全部房型介绍</a></div>',{
+                                        maxWidth : 340
+                                });
 		}
 	}
 </script>
