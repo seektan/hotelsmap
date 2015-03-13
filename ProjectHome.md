@@ -1,0 +1,1 @@
+hotels views with map
